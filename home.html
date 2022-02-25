@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <!-- importing navbar -->
+    <div id="nab" >
+        
+    </div>
+
+    <div id="navBar">
+
+    </div>
+   
+    <div id="category" >
+        <div onclick="window.location.href='/women.html'" id="women">
+           
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/5569_23_splash_W.jpg?634485886601286852" alt="">
+            
+                <p>WOMEN</p>
+            </div>
+             
+            <p> [VIEW MORE]</p>
+        </div>
+        <div onclick="window.location.href='/men.html'" id="men">
+
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/5569_22_splash_M.jpg?634485886601286852" alt="">
+           
+                <p>MEN</p> 
+            </div>
+            
+             
+            <p> [VIEW MORE]</p>
+        </div>
+        <div id="kids">
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/5569_17_splash_K.jpg?634485886601286852" alt="">
+           
+                <p>KIDS</p>  
+            </div>
+            <p> [VIEW MORE]</p>
+        </div>
+        <div id="design&arts">
+           
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/5569_15_splash_D.jpg?634485886601286852" alt="">
+           
+                <p>DESIGN + ARTS</p>  
+            </div>
+            <p> [VIEW MORE]</p>
+            
+        </div>
+        
+    </div>
+<!-- importing footbar -->
+    <div id="footB">
+
+    </div>
+
+    <div id="downF">
+        <img src="./resources/foot.png" alt="" style="width: 100%; margin-top: 150px;">
+    </div>
+
+
+</body>
+</html>
+
+<script type="module">
+
+import navBar from "./components/navbar.js";
+var nav = document.getElementById("nab")
+nav.innerHTML= navBar();
+
+</script>
+
+<script type="module">
+import navBar from "./components/navB.js";
+var nav = document.getElementById("navBar")
+nav.innerHTML= navBar();
+</script>
+
+<script type="module">
+import footerBar from "./components/footerBar.js";
+var foot = document.getElementById("footB")
+foot.innerHTML= footerBar();
+</script>

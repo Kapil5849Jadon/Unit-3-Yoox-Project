@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/wishlist.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <title>Wishlist-Page</title>
+  </head>
+  <body>
+    <div id="nab" >
+        
+    </div>
+
+    <div id="navBar">
+
+    </div>
+
+    <h1 class="text">WISHLIST</h1>
+    <div id="container"></div>
+    <div id="footB"></div>
+    <div id="downF">
+      <img src="./resources/foot.png" alt="" style="width: 100%; margin-top: 150px;">
+  </div>
+
+    
+
+    
+  </body>
+  <script src="./scripts/wishlist.js"></script>
+</html>
+
+<script type="module">
+
+    import navBar from "./components/navbar.js";
+    var nav = document.getElementById("nab")
+    nav.innerHTML= navBar();
+    
+</script>
+
+<script type="module">
+
+    import navBar from "./components/navB.js";
+    var nav = document.getElementById("navBar")
+    nav.innerHTML= navBar();
+    
+</script>
+
+<script type="module">
+    import footerBar from "./components/footerBar.js";
+    var foot = document.getElementById("footB")
+    foot.innerHTML= footerBar();
+</script>
+

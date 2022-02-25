@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/home.css">
+   
+    <title>Shopping Bag</title>
+  </head>
+  <body>
+    <div id="nab" >
+        
+    </div>
+
+    <div id="navBar">
+
+    </div>
+
+
+    <!-- Main- content of Cart-Page  -->
+    <main>
+      <h1>SHOPPING BAG</h1>
+      <div id="container">
+        <div class="itemBags"></div>
+        <div class="totalBag">
+          <h2>Summary</h2>
+          <hr />
+          <div id="total">
+            <br />
+            <h3>Total Amount :-</h3>
+            <br>
+            <h3 id="totalPrice">Discount Final Price :-</h3>
+          </div>
+          <br>
+          <hr>
+          <br>
+
+          <!-- div for Promo code apply section  -->
+          <div id="discount">
+            <p>Insert your promo code</p>
+            <form>
+                <input type="text" value="" id="promoinput" placeholder="Enter Promo Code">
+                <input type="submit" id="promoBtn">
+            </form>
+          </div>
+
+          <!-- btn for Checkout page  -->
+          <button onclick="window.location.href='./checkout.html'">
+            Go To Checkout <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+      <div id="footB"></div>
+      <div id="downF">
+        <img src="./resources/foot.png" alt="" style="width: 100%; margin-top: 150px;">
+    </div>
+
+  </body>
+ 
+</html>
+<script src="./scripts/cart.js"></script>
+
+<script type="module">
+
+    import navBar from "./components/navbar.js";
+    var nav = document.getElementById("nab")
+    nav.innerHTML= navBar();
+    
+</script>
+
+<script type="module">
+
+    import navBar from "./components/navB.js";
+    var nav = document.getElementById("navBar")
+    nav.innerHTML= navBar();
+    
+    </script>
+
+<script type="module">
+    import footerBar from "./components/footerBar.js";
+    var foot = document.getElementById("footB")
+    foot.innerHTML= footerBar();
+</script>
